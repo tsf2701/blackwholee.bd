@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Whole – Muktagacha</title>
+<meta name="description" content="Black Whole clothing shop, Muktagacha, Mymensingh. Home delivery all over Bangladesh.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--card:#121212;--line:#2a2a2a;--red:#e10600;--tx:#f4f4f4;--mu:#a5a5a5}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 'Hind Siliguri',sans-serif}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.wm{font-family:Oswald,sans-serif;letter-spacing:.04em}
+.bar{background:var(--red);text-align:center;padding:6px 10px;font-weight:600;font-size:14px}
+header{position:sticky;top:0;z-index:20;background:#000;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:8px 5%}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:46px;width:auto;display:block}
+.wm{font-size:24px;font-weight:700}.wm b{color:var(--red)}
+nav{display:flex;gap:24px;align-items:center}
+nav>a,.dd>span{cursor:pointer;font-weight:600}
+nav>a:hover,.dd>span:hover{color:var(--red)}
+.dd{position:relative}
+.dd div{display:none;position:absolute;top:100%;left:-12px;background:var(--card);border:1px solid var(--line);min-width:180px;padding:8px 0}
+.dd:hover div,.dd:focus-within div{display:block}
+.dd div a{display:block;padding:7px 16px}
+.dd div a:hover{background:#1c1c1c;color:var(--red)}
+.wa{display:inline-block;background:var(--red);color:#fff;padding:9px 18px;border-radius:4px;font-weight:600;border:0;cursor:pointer;font-family:inherit;font-size:15px;text-align:center}
+.wa:hover{background:#fff;color:#000}
+.menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:6px 12px;font-size:20px}
+.hero{text-align:center;padding:64px 5% 56px;border-bottom:1px solid var(--line)}
+.hero img{max-width:230px;width:60%;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,6vw,68px);line-height:1.1}
+.hero p{color:var(--mu);margin:12px auto 24px;max-width:520px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.info div{background:#000;padding:18px;text-align:center}
+.info b{display:block;color:var(--red);font-family:Oswald;font-size:18px}
+section{padding:48px 5% 8px}
+.group{font-size:34px;border-bottom:2px solid var(--red);padding-bottom:6px;margin-bottom:28px;display:inline-block}
+.sub{margin-bottom:44px}
+.sub h2{font-size:22px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
+.p{background:var(--card);border:1px solid var(--line)}
+.ph{aspect-ratio:1;background:#1b1b1b;display:grid;place-items:center;color:#555;font-family:Oswald;overflow:hidden;text-align:center;padding:8px}
+.ph img{width:100%;height:100%;object-fit:cover}
+.pi{padding:12px}
+.pi h3{font-size:16px;font-weight:500}
+.pi .pr{color:var(--red);font-weight:600;margin-bottom:8px;min-height:1.6em}
+.pi .wa{width:100%;font-size:14px}
+.order{background:var(--card);border-block:1px solid var(--line);padding:56px 5%;margin-top:30px}
+.order h2{font-size:30px;margin-bottom:8px}
+.order>p{color:var(--mu);margin-bottom:24px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-bottom:28px}
+.steps div{border-left:3px solid var(--red);padding:4px 16px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+footer{padding:40px 5% 90px;display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;color:var(--mu)}
+footer h3{color:#fff;margin-bottom:8px}
+footer a:hover{color:var(--red)}
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#000;font-weight:700;padding:13px 18px;border-radius:40px}
+@media(max-width:860px){
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:#000;flex-direction:column;align-items:flex-start;padding:16px 5%;border-bottom:1px solid var(--line);max-height:75vh;overflow:auto}
+nav.open{display:flex}.menu{display:block}
+.dd div{display:block;position:static;border:0;padding:0 0 0 12px;background:none}}
+</style>
+</head>
+<body>
+<div class="bar">সারা বাংলাদেশে হোম ডেলিভারি – WhatsApp-এ অর্ডার করুন</div>
+<header>
+  <a class="brand" href="#top"><img src="logo.png" alt="Black Whole" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="wm" style="display:none">BLACK <b>WHOLE</b></span></a>
+  <button class="menu" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <nav id="nav"></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img src="logo.png" alt="" onerror="this.style.display='none'">
+  <h1>BLACK WHOLE</h1>
+  <p>Muktagacha-r clothing shop. Shirt, pant, drop shoulder, t-shirt ar maggy – shob ek jaygay.</p>
+  <a class="wa" href="#" data-order>WhatsApp-e order korun</a>
+</div>
+<div class="info">
+  <div><b>Home Delivery</b>Shara Bangladesh-e</div>
+  <div><b>Shop Time</b>Shokal 9ta – Raat 9ta</div>
+  <div><b>Location</b>Pouro Market, Muktagacha, Mymensingh</div>
+  <div><b>WhatsApp</b>01726017191</div>
+</div>
+<div id="shop"></div>
+
+<div class="order" id="order">
+  <h2>Delivery pete ki korben</h2>
+  <p>Shara Bangladesh-e home delivery dewa hoy. Ei 3 step follow korun:</p>
+  <div class="steps">
+    <div><h3>1. Product bachun</h3><p>Upore photo dekhe pochondo-er shirt, pant ba t-shirt bachun.</p></div>
+    <div><h3>2. WhatsApp-e message</h3><p>Product-er nam, size, apnar nam, thikana ar phone number 01726017191-e pathan.</p></div>
+    <div><h3>3. Confirm ar delivery</h3><p>Amra confirm kore apnar thikanay product pathiye dibo.</p></div>
+  </div>
+  <div class="btns">
+    <a class="wa" href="#" data-order>WhatsApp-e message korun</a>
+    <a class="wa" style="background:#1877f2" href="https://www.facebook.com/share/1JdEZgQDTd/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook Page-e jan</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div><h3>BLACK WHOLE</h3><p>Pouro Market, Muktagacha, Mymensingh<br>Shokal 9ta – Raat 9ta<br>WhatsApp: 01726017191</p></div>
+  <div><h3>Follow us</h3><p><a href="https://www.facebook.com/share/1JdEZgQDTd/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><br><a href="https://www.instagram.com/blackwholee.bd" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.tiktok.com/@blackwholeee" target="_blank" rel="noopener">TikTok</a></p></div>
+  <div><p>© 2026 Black Whole</p></div>
+</footer>
+<a class="fab" href="#" data-order>WhatsApp</a>
+
+<script>
+const NUMBER='8801726017191';
+
+/* ====== PRODUCT ADD KORAR NIYOM ======
+ Prottek section-er products:[] er bhitore eibhabe likhun:
+   {name:'Black Formal Shirt', img:'images/shirt1.jpg', price:'1200'},
+ img = photo-r path (images folder-e photo rakhun). price khali ('') rakhle dam dekhabe na.
+ Products khali thakle "Photo coming soon" dekhabe. */
+const shop=[
+ {group:'Shirt',subs:[
+  {id:'formal-shirt',title:'Formal Shirt',products:[]},
+  {id:'down-shoulder-shirt',title:'Down Shoulder Shirt',products:[]},
+  {id:'party-shirt',title:'Party Shirt',products:[]},
+  {id:'henley-shirt',title:'Henley Shirt',products:[]}]},
+ {group:'Pant',subs:[
+  {id:'formal-pant',title:'Formal Pant',products:[]},
+  {id:'jeans',title:'Jeans',products:[]},
+  {id:'formal-baggy',title:'Formal Baggy',products:[]},
+  {id:'jeans-baggy',title:'Jeans Baggy',products:[]},
+  {id:'low-cut-baggy',title:'Low Cut Baggy',products:[]},
+  {id:'bootcut',title:'Bootcut',products:[]}]},
+ {group:'Drop Shoulder',subs:[{id:'drop-shoulder',title:'Drop Shoulder',products:[]}]},
+ {group:'T-Shirt',subs:[{id:'t-shirt',title:'T-Shirt',products:[]}]},
+ {group:'Maggy',subs:[{id:'maggy',title:'Maggy',products:[]}]}
+];
+
+const wa=t=>`https://wa.me/${NUMBER}?text=${encodeURIComponent(t)}`;
+const card=(p,sec)=>`<div class="p"><div class="ph">${p.img?`<img src="${p.img}" alt="${p.name||sec}" loading="lazy">`:sec+'<br>Photo coming soon'}</div>
+<div class="pi"><h3>${p.name||sec}</h3><div class="pr">${p.price?'৳ '+p.price:''}</div>
+<a class="wa" href="${wa('Assalamu alaikum, ami Black Whole theke "'+(p.name||sec)+'" order korte chai.')}" target="_blank" rel="noopener">Order on WhatsApp</a></div></div>`;
+
+document.getElementById('shop').innerHTML=shop.map(g=>`<section id="${g.group.toLowerCase().replace(/\s/g,'-')}"><h2 class="group">${g.group}</h2>`+
+ g.subs.map(s=>`<div class="sub" id="${s.id}">${g.subs.length>1?`<h2>${s.title}</h2>`:''}<div class="grid">${
+  (s.products.length?s.products:[{},{},{},{}]).map(p=>card(p,s.title)).join('')}</div></div>`).join('')+`</section>`).join('');
+
+document.getElementById('nav').innerHTML='<a href="#top">Home</a>'+shop.map(g=>g.subs.length>1
+ ?`<div class="dd"><span tabindex="0">${g.group} ▾</span><div>${g.subs.map(s=>`<a href="#${s.id}">${s.title}</a>`).join('')}</div></div>`
+ :`<a href="#${g.subs[0].id}">${g.group}</a>`).join('')+'<a href="#order">Delivery</a>';
+
+document.querySelectorAll('[data-order]').forEach(a=>{a.href=wa('Assalamu alaikum, ami Black Whole theke order korte chai.');a.target='_blank';a.rel='noopener'});
+document.getElementById('nav').addEventListener('click',e=>{if(e.target.tagName==='A')e.currentTarget.classList.remove('open')});
+</script>
+</body>
+</html>
